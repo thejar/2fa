@@ -12,5 +12,5 @@ for line in $all; do
     issuer=${arr[1]}
     secret=${arr[2]}
     echo $email $issuer
-    oathtool --totp -v -b $secret;
+    oathtool --totp -b $secret;
 done
